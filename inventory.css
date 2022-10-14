@@ -122,11 +122,19 @@ html, body {
 .auto-resizable-iframe .grid {
     position: absolute;
     display: grid;
-    grid-gap: 1.7%;
+    grid-column-gap: 1.5%;
+    grid-row-gap: 2%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    width: 62%;
-    height: 52%;
+    width: 61.65%;
+    height: 51%;
     top: 24%;
-    left: 19%;
+    left: 19.1%;
+}
+
+.grid div:hover {
+    background-image: url("TechTestComponents/Images/InventoryMain/IMG_SlotHighlight.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
