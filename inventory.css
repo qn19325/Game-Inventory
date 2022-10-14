@@ -1,0 +1,132 @@
+html, body {
+    background: url("TechTestComponents/Images/Background/UI_Background.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;     
+}
+
+.auto-resizable-iframe {
+    min-width: 65%;
+    max-height: 80%;
+    /* border: solid; */
+    text-align: center;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-55%);
+    transform: translate(-50%,-55%);
+}
+  
+.auto-resizable-iframe > div {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0px;
+}
+
+.auto-resizable-iframe .panel {
+    top: 0px;
+    left: 0px;
+    width: 80%;
+    height: auto;
+}
+
+.auto-resizable-iframe .background {
+    position: absolute;
+    width: 62%;
+    height: auto;
+    top: 24%;
+    left: 18.8%;
+}
+.auto-resizable-iframe .border {
+    position: absolute;
+    width: 65%;
+    height: auto;
+    top: 22%;
+    left: 17.4%;
+}
+
+.auto-resizable-iframe .icon {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    top: 10%;
+    left: 43%;
+}
+
+.auto-resizable-iframe .top {
+    position: absolute;
+    width: 6%;
+    height: auto;
+    top: 2.5%;
+    left: 47%;
+}
+.auto-resizable-iframe .left {
+    position: absolute;
+    width: 5.5%;
+    height: auto;
+    top: 46.1%;
+    left: 12%;
+    transform: rotate(180deg);
+}
+.auto-resizable-iframe .right {
+    position: absolute;
+    width: 5.5%;
+    height: auto;
+    top: 46.1%;
+    right: 12%;
+}
+.auto-resizable-iframe .bottom {
+    position: absolute;
+    width: 5.5%;
+    height: auto;
+    bottom: 12.8%;
+    left: 47.35%;
+    transform: rotate(180deg);
+}
+.auto-resizable-iframe .leftTop {
+    position: absolute;
+    width: 7%;
+    height: auto;
+    top: 19%;
+    left: 15%;
+    transform: rotate(90deg);
+}
+.auto-resizable-iframe .rightTop {
+    position: absolute;
+    width: 7%;
+    height: auto;
+    top: 19%;
+    right: 15%;
+    transform: scaleX(-1) rotate(90deg);
+}
+
+.auto-resizable-iframe .rightBottom {
+    position: absolute;
+    width: 7%;
+    height: auto;
+    bottom: 19%;
+    right: 15%;
+    transform: scaleX(-1) rotate(0deg);
+}
+.auto-resizable-iframe .leftBottom {
+    position: absolute;
+    width: 7%;
+    height: auto;
+    bottom: 19%;
+    left: 15%;
+}
+
+
+.auto-resizable-iframe .grid {
+    position: absolute;
+    display: grid;
+    grid-gap: 1.7%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 62%;
+    height: 52%;
+    top: 24%;
+    left: 19%;
+}
