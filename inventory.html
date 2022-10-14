@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="inventory.css">
     <title>Document</title>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+     
+        function dragStart(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+     
+        function dragDrop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
 </head>
 <body>
     <div class="auto-resizable-iframe">
@@ -24,88 +39,88 @@
             <img class="rightBottom" src="TechTestComponents/Images/InventoryMain/IMG_CornerBrace.png" alt="">
             
             <div class="grid">
-                <div>
-                    <img id="apple" src="TechTestComponents/Images/Icons/Apple.png" alt="" width="49%" height="51%">
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="apple1" src="TechTestComponents/Images/Icons/Apple.png" alt="" draggable="true" ondragstart="dragStart(event)" width="49%" height="51%">
                     <p id="two">10</p>
                 </div>
-                <div>
-                    <img id="book" src="TechTestComponents/Images/Icons/Book.png" alt="" width="56%" height="44%">
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="book1" src="TechTestComponents/Images/Icons/Book.png" alt="" draggable="true" ondragstart="dragStart(event)" width="56%" height="44%">
                 </div>
-                <div>
-                    <img id="sword" src="TechTestComponents/Images/Icons/Sword.png" alt="" width="32%" height="68%">
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="sword1" src="TechTestComponents/Images/Icons/Sword.png" alt="" draggable="true" ondragstart="dragStart(event)" width="32%" height="68%">
                 </div>
-                <div>
-                    <img id="flask" src="TechTestComponents/Images/Icons/Flask.png" alt="" width="45%" height="55%">
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="flask1" src="TechTestComponents/Images/Icons/Flask.png" alt="" draggable="true" ondragstart="dragStart(event)" width="45%" height="55%">
                 </div>
-                <div>
-                    <img id="herbs" src="TechTestComponents/Images/Icons/Herbs.png" alt="" width="46%" height="54%">
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="herbs1" src="TechTestComponents/Images/Icons/Herbs.png" alt="" draggable="true" ondragstart="dragStart(event)" width="46%" height="54%">
                     <p id="two">10</p>
                 </div>
-                <div>
-                    <img id="apple" src="TechTestComponents/Images/Icons/Apple.png" alt="" width="49%" height="51%">
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="apple2" src="TechTestComponents/Images/Icons/Apple.png" alt="" draggable="true" ondragstart="dragStart(event)" width="49%" height="51%">
                     <p id="one">7</p>
                 </div>
-                <div>
-                    <img id="flask" src="TechTestComponents/Images/Icons/Flask.png" alt="" width="45%" height="55%">
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="flask2" src="TechTestComponents/Images/Icons/Flask.png" alt="" draggable="true" ondragstart="dragStart(event)" width="45%" height="55%">
                 </div>
-                <div>
-                    <img id="flask" src="TechTestComponents/Images/Icons/Flask.png" alt="" width="45%" height="55%">
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="flask3" src="TechTestComponents/Images/Icons/Flask.png" alt="" draggable="true" ondragstart="dragStart(event)" width="45%" height="55%">
                 </div>
                 
-                <div>
-                    <img id="sword" src="TechTestComponents/Images/Icons/Sword.png" alt="" width="32%" height="68%">
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="sword2" src="TechTestComponents/Images/Icons/Sword.png" alt="" draggable="true" ondragstart="dragStart(event)" width="32%" height="68%">
                 </div>
-                <div>
-                    <img id="book" src="TechTestComponents/Images/Icons/Book.png" alt="" width="56%" height="44%">
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="book2" src="TechTestComponents/Images/Icons/Book.png" alt="" draggable="true" ondragstart="dragStart(event)" width="56%" height="44%">
                 </div>
-                <div>
-                    <img id="book" src="TechTestComponents/Images/Icons/Book.png" alt="" width="56%" height="44%">
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="book3" src="TechTestComponents/Images/Icons/Book.png" alt="" draggable="true" ondragstart="dragStart(event)" width="56%" height="44%">
                 </div>
-                <div>
-                    <img id="herbs" src="TechTestComponents/Images/Icons/Herbs.png" alt="" width="46%" height="54%">
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="herbs2" src="TechTestComponents/Images/Icons/Herbs.png" alt="" draggable="true" ondragstart="dragStart(event)" width="46%" height="54%">
                     <p id="two">10</p>
                 </div>
-                <div>
-                    <img id="herbs" src="TechTestComponents/Images/Icons/Herbs.png" alt="" width="46%" height="54%">
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="herbs3" src="TechTestComponents/Images/Icons/Herbs.png" alt="" draggable="true" ondragstart="dragStart(event)" width="46%" height="54%">
                     <p id="two">10</p>
                 </div>
-                <div>
-                    <img id="sword" src="TechTestComponents/Images/Icons/Sword.png" alt="" width="32%" height="68%">
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="sword3" src="TechTestComponents/Images/Icons/Sword.png" alt="" draggable="true" ondragstart="dragStart(event)" width="32%" height="68%">
                 </div>
-                <div>
-                    <img id="book" src="TechTestComponents/Images/Icons/Book.png" alt="" width="56%" height="44%">
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="book4" src="TechTestComponents/Images/Icons/Book.png" alt="" draggable="true" ondragstart="dragStart(event)" width="56%" height="44%">
                 </div>
-                <div>
-                    <img id="herbs" src="TechTestComponents/Images/Icons/Herbs.png" alt="" width="46%" height="54%">
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+                    <img id="herbs4" src="TechTestComponents/Images/Icons/Herbs.png" alt="" draggable="true" ondragstart="dragStart(event)" width="46%" height="54%">
                     <p id="one">4</p>
                 </div>
 
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
 
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
 
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                <div ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
                 
                 
             </div>

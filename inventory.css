@@ -144,19 +144,52 @@ html, body {
     justify-content: center;
 }
 
-#apple {
+#apple1 {
     transform: translate(0%, 55%);
 }
-#book {
+#apple2 {
+    transform: translate(0%, 55%);
+}
+#book1 {
     transform: translate(0%, 75%);
 }
-#sword {
+#book2{
+    transform: translate(0%, 75%);
+}
+#book3 {
+    transform: translate(0%, 75%);
+}
+#book4 {
+    transform: translate(0%, 75%);
+}
+#sword1 {
     transform: translate(0%, 25%) scaleX(-1);
 }
-#flask {
+#sword2 {
+    transform: translate(0%, 25%) scaleX(-1);
+}
+#sword3 {
+    transform: translate(0%, 25%) scaleX(-1);
+}
+#flask1 {
     transform: translate(0%, 45%);
 }
-#herbs {
+#flask2 {
+    transform: translate(0%, 45%);
+}
+#flask3 {
+    transform: translate(0%, 45%);
+}
+#herbs1 {
+    transform: translate(0%, 50%);
+}
+#herbs2 {
+    transform: translate(0%, 50%);
+}
+#herbs3 {
+    transform: translate(0%, 50%);
+}
+#herbs4 {
     transform: translate(0%, 50%);
 }
 
@@ -178,3 +211,4 @@ html, body {
     color: #895724;
     transform: translate(-250%, -50%);
 }
+
