@@ -138,3 +138,13 @@ html, body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.grid div {
+    display: flex;
+    justify-content: center;
+}
+
+.grid div img {
+    transform: translate(0%, 40%);
+}
+
