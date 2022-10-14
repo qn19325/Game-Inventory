@@ -144,8 +144,20 @@ html, body {
     justify-content: center;
 }
 
-.grid div img {
-    transform: translate(0%, 40%);
+#apple {
+    transform: translate(0%, 55%);
+}
+#book {
+    transform: translate(0%, 75%);
+}
+#sword {
+    transform: translate(0%, 25%) scaleX(-1);
+}
+#flask {
+    transform: translate(0%, 45%);
+}
+#herbs {
+    transform: translate(0%, 50%);
 }
 
 
