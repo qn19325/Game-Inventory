@@ -127,7 +127,7 @@ html, body {
     top: 24%;
     left: 19.1%;
   }
-.grid div:hover {
+.grid .box:hover {
     background-image: url("TechTestComponents/Images/InventoryMain/IMG_SlotHighlight.png");
     background-size: cover;
     background-repeat: no-repeat;
