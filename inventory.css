@@ -6,10 +6,9 @@ html, body {
     background-size: cover;     
 }
 
-.auto-resizable-iframe {
+.container {
     min-width: 65%;
     max-height: 80%;
-    /* border: solid; */
     text-align: center;
     position: absolute;
     margin: 0;
@@ -19,27 +18,26 @@ html, body {
     transform: translate(-50%,-55%);
 }
   
-.auto-resizable-iframe > div {
+.scaler {
     position: relative;
     padding-bottom: 75%;
     height: 0px;
 }
 
-.auto-resizable-iframe .panel {
+#panel {
     top: 0px;
     left: 0px;
     width: 80%;
     height: auto;
 }
-
-.auto-resizable-iframe .background {
+#background {
     position: absolute;
     width: 62%;
     height: auto;
     top: 24%;
     left: 18.8%;
 }
-.auto-resizable-iframe .border {
+#border {
     position: absolute;
     width: 65%;
     height: auto;
@@ -47,7 +45,7 @@ html, body {
     left: 17.4%;
 }
 
-.auto-resizable-iframe .icon {
+#icon {
     position: absolute;
     width: 15%;
     height: auto;
@@ -55,14 +53,14 @@ html, body {
     left: 43%;
 }
 
-.auto-resizable-iframe .top {
+#top {
     position: absolute;
     width: 6%;
     height: auto;
     top: 2.5%;
     left: 47%;
 }
-.auto-resizable-iframe .left {
+#left {
     position: absolute;
     width: 5.5%;
     height: auto;
@@ -70,14 +68,14 @@ html, body {
     left: 12%;
     transform: rotate(180deg);
 }
-.auto-resizable-iframe .right {
+#right {
     position: absolute;
     width: 5.5%;
     height: auto;
     top: 46.1%;
     right: 12%;
 }
-.auto-resizable-iframe .bottom {
+#bottom {
     position: absolute;
     width: 5.5%;
     height: auto;
@@ -85,7 +83,7 @@ html, body {
     left: 47.35%;
     transform: rotate(180deg);
 }
-.auto-resizable-iframe .leftTop {
+#leftTop {
     position: absolute;
     width: 7%;
     height: auto;
@@ -93,7 +91,7 @@ html, body {
     left: 15%;
     transform: rotate(90deg);
 }
-.auto-resizable-iframe .rightTop {
+#rightTop {
     position: absolute;
     width: 7%;
     height: auto;
@@ -101,8 +99,7 @@ html, body {
     right: 15%;
     transform: scaleX(-1) rotate(90deg);
 }
-
-.auto-resizable-iframe .rightBottom {
+#rightBottom {
     position: absolute;
     width: 7%;
     height: auto;
@@ -110,7 +107,7 @@ html, body {
     right: 15%;
     transform: scaleX(-1) rotate(0deg);
 }
-.auto-resizable-iframe .leftBottom {
+#leftBottom {
     position: absolute;
     width: 7%;
     height: auto;
@@ -119,7 +116,7 @@ html, body {
 }
 
 
-.auto-resizable-iframe .grid {
+.grid {
     position: absolute;
     display: grid;
     grid-column-gap: 1.5%;
@@ -144,52 +141,29 @@ html, body {
     justify-content: center;
 }
 
-#apple1 {
+.apple {
+    width: 49%;
+    height: 51%;
     transform: translate(0%, 55%);
 }
-#apple2 {
-    transform: translate(0%, 55%);
-}
-#book1 {
+.book {
+    width: 56%;
+    height: 44%;
     transform: translate(0%, 75%);
 }
-#book2{
-    transform: translate(0%, 75%);
-}
-#book3 {
-    transform: translate(0%, 75%);
-}
-#book4 {
-    transform: translate(0%, 75%);
-}
-#sword1 {
+.sword {
+    width: 32%;
+    height: 68%;
     transform: translate(0%, 25%) scaleX(-1);
 }
-#sword2 {
-    transform: translate(0%, 25%) scaleX(-1);
-}
-#sword3 {
-    transform: translate(0%, 25%) scaleX(-1);
-}
-#flask1 {
+.flask {
+    width: 45%;
+    height: 55%;
     transform: translate(0%, 45%);
 }
-#flask2 {
-    transform: translate(0%, 45%);
-}
-#flask3 {
-    transform: translate(0%, 45%);
-}
-#herbs1 {
-    transform: translate(0%, 50%);
-}
-#herbs2 {
-    transform: translate(0%, 50%);
-}
-#herbs3 {
-    transform: translate(0%, 50%);
-}
-#herbs4 {
+.herbs {
+    width: 46%;
+    height: 54%;
     transform: translate(0%, 50%);
 }
 
@@ -197,18 +171,17 @@ html, body {
     font-family: 'Railway';
     src: url('TechTestComponents/Fonts/NumericsFont.otf');
 }
-#two {
+.two {
     position: absolute;
     font-size: 1vw;
     font-family: 'Railway';
     color: #895724;
     transform: translate(-150%, -50%);
 }
-#one {
+.one {
     position: absolute;
     font-size: 1vw;
     font-family: 'Railway';
     color: #895724;
     transform: translate(-250%, -50%);
 }
-
