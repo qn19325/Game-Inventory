@@ -85,33 +85,33 @@ html, body {
 }
 #leftTop {
     position: absolute;
-    width: 7%;
+    width: 8%;
     height: auto;
     top: 19%;
-    left: 15%;
+    left: 15.5%;
     transform: rotate(90deg);
 }
 #rightTop {
     position: absolute;
-    width: 7%;
+    width: 8%;
     height: auto;
     top: 19%;
-    right: 15%;
+    right: 15.5%;
     transform: scaleX(-1) rotate(90deg);
 }
 #rightBottom {
     position: absolute;
-    width: 7%;
+    width: 8%;
     height: auto;
-    bottom: 19%;
+    bottom: 19.5%;
     right: 15%;
     transform: scaleX(-1) rotate(0deg);
 }
 #leftBottom {
     position: absolute;
-    width: 7%;
+    width: 8%;
     height: auto;
-    bottom: 19%;
+    bottom: 19.5%;
     left: 15%;
 }
 

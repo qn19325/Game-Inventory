@@ -85,33 +85,33 @@ html, body {
 }
 #leftTop {
     position: absolute;
-    width: 7%;
+    width: 8%;
     height: auto;
     top: 19%;
-    left: 15%;
+    left: 15.5%;
     transform: rotate(90deg);
 }
 #rightTop {
     position: absolute;
-    width: 7%;
+    width: 8%;
     height: auto;
     top: 19%;
-    right: 15%;
+    right: 15.5%;
     transform: scaleX(-1) rotate(90deg);
 }
 #rightBottom {
     position: absolute;
-    width: 7%;
+    width: 8%;
     height: auto;
-    bottom: 19%;
+    bottom: 19.5%;
     right: 15%;
     transform: scaleX(-1) rotate(0deg);
 }
 #leftBottom {
     position: absolute;
-    width: 7%;
+    width: 8%;
     height: auto;
-    bottom: 19%;
+    bottom: 19.5%;
     left: 15%;
 }
   
@@ -172,6 +172,14 @@ html, body {
     font-family: 'Railway';
     src: url('TechTestComponents/Fonts/NumericsFont.otf');
 }
+@font-face {
+    font-family: 'Athabasca-italic';
+    src: url('TechTestComponents/Fonts/ToolTipDescription.ttf');
+}
+@font-face {
+    font-family: 'Athabasca-regular';
+    src: url('TechTestComponents/Fonts/MenusPrimaryFont.ttf');
+}
 .two {
     position: absolute;
     font-size: 1vw;
@@ -185,4 +193,82 @@ html, body {
     font-family: 'Railway';
     color: #895724;
     transform: translate(-250%, -50%);
+}
+
+.tooltip {
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    padding: 4%;
+    min-width: 15%;
+    min-height: 15%;
+    background-image: url("TechTestComponents/Images/Tooltip/IMG_TooltipPanel.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    color: #895724;
+    transition: opacity 500ms, transform 500ms;
+    transform: translate(72%, 55%);
+}
+.grid .box:hover .tooltip {
+    opacity: 1;
+}
+.tooltip .name {
+    position: absolute;
+    font-family: 'Athabasca-regular';
+    font-size: 1.1vw;
+    font-weight: bold;
+}
+.tooltip .detail {
+    position: absolute;
+    font-family: 'Athabasca-italic';
+    font-size: 0.8vw;
+}
+.tooltip .weight {
+    position: absolute;
+    font-family: 'Athabasca-regular';
+    font-size: 0.8vw;
+}
+.tooltip .appleName {
+    transform: translate(-35%, -120%);
+}
+.tooltip .appleWeight {
+    transform: translate(150%, 80%);
+}
+
+.tooltip .bookName {
+    transform: translate(0%, -120%);
+}
+.tooltip .bookWeight {
+    transform: translate(170%, 80%);
+}
+
+.tooltip .swordName {
+    transform: translate(-25%, -120%);
+}
+.tooltip .swordDetail {
+    transform: translate(5%, -0%);
+}
+.tooltip .swordWeight {
+    transform: translate(150%, 80%);
+}
+
+.tooltip .flaskName {
+    transform: translate(-35%, -120%);
+}
+.tooltip .flaskDetail {
+    transform: translate(-35%, -0%);
+}
+.tooltip .flaskWeight {
+    transform: translate(150%, 80%);
+}
+
+.tooltip .herbsName {
+    transform: translate(-30%, -120%);
+}
+.tooltip .herbsDetail {
+    transform: translate(-10%, 0%);
+}
+.tooltip .herbsWeight {
+    transform: translate(200%, 80%);
 }
